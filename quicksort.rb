@@ -4,6 +4,9 @@ def quick_sort(array, left = 0, right = array.length - 1)
   if left < new_pivot
     quick_sort(array, left, new_pivot)
   end
+  if right > pivot
+    quick_sort(array, pivot, right)
+  end
   array
 end
 
