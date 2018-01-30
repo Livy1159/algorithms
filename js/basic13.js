@@ -10,17 +10,15 @@ printIntegers();
 
 // // 2 Print all odd integers from 1-255.
 
-// def print_odd_integers
-//   num = 1
-//   while num <= 255
-//     if num.odd?
-//       p num
-//     end
-//   num += 1
-//   end
-// end
+function printOddIntegers() {
+  for(i = 1; i < 256; i++) {
+    if(i % 2 != 0) {
+      console.log(i);
+    }
+  }
+}
 
-
+printOddIntegers();
 
 // // 3 Print all integers and the sum of all integers from 0-255
 
@@ -38,6 +36,8 @@ printIntegers();
 //   end
 //   p sum
 // end
+
+
 
 // // 4 Print all values of an array
 
