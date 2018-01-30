@@ -23,7 +23,7 @@ printOddIntegers();
 // 3 Print all integers and the sum of all integers from 0-255
 
 function printIntegersAndSum() {
-  let sum = 0
+  let sum = 0;
   for(i = 0; i < 256; i++) {
     sum = sum + i;
     console.log(i);
@@ -41,14 +41,22 @@ function printArrayValues(array) {
   }
 } 
 
-testArray = [0, 2, 1, 3, 5, 4]
+testArray = [0, 2, 1, 3, 5, 4];
 printArrayValues(testArray);
 // // 5 Print max value of a given array
 
-// def max_value(array)
-//   p array.max
-// end
+function maxValue(array) {
+  let max = array[0];
+  for(i = 0; i < array.length; i++) {
+    if(max < array[i]) {
+      max = array[i];
+    }
+  }
+  console.log(max);
+}
 
+testArray = [0, 2, 1, 3, 5, 4];
+maxValue(testArray);
 // // 6 Print the average of the values of a given array
 
 // def average(array)
@@ -59,6 +67,17 @@ printArrayValues(testArray);
 //   avg = sum / array.length
 //   p avg
 // end
+
+function average(array) {
+  let sum = 0
+  for(i = 0; i < array.length; i++) {
+    sum = sum + array[i]
+  }
+  console.log(sum/array.length);
+}
+
+testArray = [0, 2, 1, 3, 5, 4]
+average(testArray);
 
 // // 7 Create and return an array with all odd integers from 1-255
 
