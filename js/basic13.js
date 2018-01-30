@@ -8,88 +8,106 @@ function printIntegers() {
 
 printIntegers();
 
-// // 2 Print all odd integers from 1-255.
+// 2 Print all odd integers from 1-255.
 
-// def print_odd_integers
-//   num = 1
-//   while num <= 255
-//     if num.odd?
-//       p num
-//     end
-//   num += 1
-//   end
-// end
+function printOddIntegers() {
+  for(i = 1; i < 256; i++) {
+    if(i % 2 != 0) {
+      console.log(i);
+    }
+  }
+}
 
+printOddIntegers();
 
+// 3 Print all integers and the sum of all integers from 0-255
 
-// // 3 Print all integers and the sum of all integers from 0-255
+function printIntegersAndSum() {
+  let sum = 0;
+  for(i = 0; i < 256; i++) {
+    sum = sum + i;
+    console.log(i);
+  }
+  console.log(sum);
+}
 
-// def print_integers
-//   sum = 0
-//   num_array = []
-//   num = 0
-//   while num <= 255
-//     p num
-//     num_array << num
-//     num += 1
-//   end
-//   num_array.each do |num|
-//     sum += num
-//   end
-//   p sum
-// end
+printIntegersAndSum();
 
-// // 4 Print all values of an array
+// 4 Print all values of an array
 
-// def print_array(array)
-//   array.each do |value|
-//     p value
-//   end
-// end
+function printArrayValues(array) {
+  for(i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+} 
 
-// // 5 Print max value of a given array
+testArray1 = [0, 2, 1, 3, 5, 4];
+printArrayValues(testArray1);
+// 5 Print max value of a given array
 
-// def max_value(array)
-//   p array.max
-// end
+function maxValue(array) {
+  let max = array[0];
+  for(i = 0; i < array.length; i++) {
+    if(max < array[i]) {
+      max = array[i];
+    }
+  }
+  console.log(max);
+}
 
-// // 6 Print the average of the values of a given array
+testArray2 = [0, 2, 1, 3, 5, 4];
+maxValue(testArray2);
+// 6 Print the average of the values of a given array
 
-// def average(array)
-//   sum = 0.0
-//   array.each do |num|
-//     sum += num
-//   end
-//   avg = sum / array.length
-//   p avg
-// end
+function average(array) {
+  let sum = 0
+  for(i = 0; i < array.length; i++) {
+    sum = sum + array[i]
+  }
+  console.log(sum/array.length);
+}
 
-// // 7 Create and return an array with all odd integers from 1-255
+testArray3 = [0, 2, 1, 3, 5, 4]
+average(testArray3);
 
-// def odd_array
-//   odd_arr = []
-//   num = 1
-//   while num <= 255
-//     if num.odd?
-//       odd_arr << num
-//     end
-//     num += 1
-//   end
-//   odd_arr
-// end
+// 7 Create and return an array with all odd integers from 1-255
 
-// // 8 Square each value of a given array then return that array with the new values
+function makeOddArray() {
+  let oddArray = [];
+  for(i = 1; i < 256; i++) {
+    if(i % 2 != 0) {
+      oddArray.push(i);
+    }
+  }
+  return oddArray;
+}
 
-// def square_array(array)
-//   squared_array = []
-//   array.each do |num|
-//     square = num * num
-//     squared_array << square
-//   end
-//   squared_array
-// end
+makeOddArray();
 
-// // 9 Return all values of a given array that are greater than a given value
+// 8 Square each value of a given array then return that array with the new values
+
+//creating new array and pushing squared values
+function squareArray(array) {
+  let squaredArray = []
+  for(i = 0; i < array.length; i++) {
+    squaredArray.push(array[i] * array[i])
+  }
+  return squaredArray;
+}
+
+//changing values of current array by squaring them
+function squareTheArray(array) {
+  for(i = 0; i < array.length; i++) {
+    array[i] = array[i] * array[i]
+  }
+  return array;
+} 
+
+testArray4 = [0, 2, 1, 3, 5, 4]
+squareArray(testArray4);
+squareTheArray(testArray4);
+
+// 9 Return all values of a given array that are greater than a given value
 
 // def greater(array, value)
 //   greater_array = []
@@ -100,6 +118,11 @@ printIntegers();
 //   end
 //   greater_array
 // end
+
+function greater(array, value) {
+  let greaterArray = [];
+
+}
 
 // // 10 Return the given array after setting any negative values to zero
 
