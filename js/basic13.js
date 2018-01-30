@@ -37,7 +37,16 @@ printOddIntegers();
 //   p sum
 // end
 
+function printIntegersAndSum() {
+  let sum = 0
+  for(i = 0; i < 256; i++) {
+    sum = sum + i;
+    console.log(i);
+  }
+  console.log(sum);
+}
 
+printIntegersAndSum();
 
 // // 4 Print all values of an array
 
