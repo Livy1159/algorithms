@@ -43,7 +43,7 @@ function printArrayValues(array) {
 
 testArray = [0, 2, 1, 3, 5, 4];
 printArrayValues(testArray);
-// // 5 Print max value of a given array
+// 5 Print max value of a given array
 
 function maxValue(array) {
   let max = array[0];
@@ -57,16 +57,7 @@ function maxValue(array) {
 
 testArray = [0, 2, 1, 3, 5, 4];
 maxValue(testArray);
-// // 6 Print the average of the values of a given array
-
-// def average(array)
-//   sum = 0.0
-//   array.each do |num|
-//     sum += num
-//   end
-//   avg = sum / array.length
-//   p avg
-// end
+// 6 Print the average of the values of a given array
 
 function average(array) {
   let sum = 0
@@ -79,19 +70,19 @@ function average(array) {
 testArray = [0, 2, 1, 3, 5, 4]
 average(testArray);
 
-// // 7 Create and return an array with all odd integers from 1-255
+// 7 Create and return an array with all odd integers from 1-255
 
-// def odd_array
-//   odd_arr = []
-//   num = 1
-//   while num <= 255
-//     if num.odd?
-//       odd_arr << num
-//     end
-//     num += 1
-//   end
-//   odd_arr
-// end
+function makeOddArray() {
+  let oddArray = [];
+  for(i = 1; i < 256; i++) {
+    if(i % 2 != 0) {
+      oddArray.push(i);
+    }
+  }
+  return oddArray;
+}
+
+makeOddArray();
 
 // // 8 Square each value of a given array then return that array with the new values
 
