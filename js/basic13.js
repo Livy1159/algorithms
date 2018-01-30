@@ -8,7 +8,7 @@ function printIntegers() {
 
 printIntegers();
 
-// // 2 Print all odd integers from 1-255.
+// 2 Print all odd integers from 1-255.
 
 function printOddIntegers() {
   for(i = 1; i < 256; i++) {
@@ -20,22 +20,7 @@ function printOddIntegers() {
 
 printOddIntegers();
 
-// // 3 Print all integers and the sum of all integers from 0-255
-
-// def print_integers
-//   sum = 0
-//   num_array = []
-//   num = 0
-//   while num <= 255
-//     p num
-//     num_array << num
-//     num += 1
-//   end
-//   num_array.each do |num|
-//     sum += num
-//   end
-//   p sum
-// end
+// 3 Print all integers and the sum of all integers from 0-255
 
 function printIntegersAndSum() {
   let sum = 0
@@ -48,14 +33,16 @@ function printIntegersAndSum() {
 
 printIntegersAndSum();
 
-// // 4 Print all values of an array
+// 4 Print all values of an array
 
-// def print_array(array)
-//   array.each do |value|
-//     p value
-//   end
-// end
+function printArrayValues(array) {
+  for(i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+} 
 
+testArray = [0, 2, 1, 3, 5, 4]
+printArrayValues(testArray);
 // // 5 Print max value of a given array
 
 // def max_value(array)
