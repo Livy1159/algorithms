@@ -120,9 +120,18 @@ squareTheArray(testArray4);
 // end
 
 function greater(array, value) {
-  let greaterArray = [];
-
+  let count = 0;
+  for(let i = 0; i < array.length; i++) {
+    if(array[i] > value) {
+      count++;
+    }
+  }
+  console.log(count);
 }
+
+testArray5 = [0, 22, 1, 3, 55, 4];
+value = 10;
+greater(testArray5, value);
 
 // // 10 Return the given array after setting any negative values to zero
 
