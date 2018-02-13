@@ -107,17 +107,7 @@ testArray4 = [0, 2, 1, 3, 5, 4]
 squareArray(testArray4);
 squareTheArray(testArray4);
 
-// 9 Return all values of a given array that are greater than a given value
-
-// def greater(array, value)
-//   greater_array = []
-//   array.each do |num|
-//     if num > value
-//       greater_array << num
-//     end
-//   end
-//   greater_array
-// end
+// 9 Return count of all values of a given array that are greater than a given value
 
 function greater(array, value) {
   let count = 0;
